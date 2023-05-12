@@ -15,7 +15,7 @@ from transformers import (
     PreTrainedTokenizerBase,
     Trainer,
     TrainingArguments,
-    LlamaTokenizer,
+    LlaMATokenizer,
 
 )
 #Added LlamaTokenizer
