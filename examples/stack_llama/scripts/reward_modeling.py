@@ -131,8 +131,8 @@ training_args = TrainingArguments(
     lr_scheduler_type=script_args.lr_scheduler_type,
 )
 # Load the value-head model and tokenizer.
-tokenizer = AutoTokenizer.from_pretrained(script_args.model_name, use_auth_token=True)
-config = AutoConfig.from_pretrained(script_args.model_name)
+tokenizer = LlamaTokenizer.from_pretrained(script_args.model_name, use_auth_token=True)
+config = LlamaConfig.from_pretrained(script_args.model_name)
 
 if "llama" in script_args.model_name:
     # required for llama
