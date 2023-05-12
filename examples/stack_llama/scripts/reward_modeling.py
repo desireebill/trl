@@ -15,6 +15,8 @@ from transformers import (
     PreTrainedTokenizerBase,
     Trainer,
     TrainingArguments,
+    LlamaTokenizer,
+
 )
 from transformers.utils import PaddingStrategy
 
